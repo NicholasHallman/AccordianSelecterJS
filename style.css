@@ -1,0 +1,75 @@
+
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.textbox{
+    border-style:solid;
+    border-width:1px;
+    border-color: #777;
+    font-size:14px;
+    padding:5px 3px;
+    width:100%;
+}
+
+.sideBySide{
+    float:left;
+}
+
+.button{
+    transition: all .5s;
+}
+
+.selector{
+    width:500px;
+    height:auto;
+    margin: 10px;
+}
+
+.accordianContainer{
+    padding:5px 3px;
+    width:100%;
+    display:none;
+    border-style:solid;
+    border-width:1px;
+    border-color:#aaaaaa;
+    border-top-width: 0px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.companyT{
+    width:90%;
+}
+
+.subcat{
+    clear:left;
+    padding-left:30px;
+    display:none;
+    overflow:hidden;
+    color:#232323;
+}
+
+.subcat:hover{
+    color:#25a59a;
+    transition: color .2s;
+}
+
+
+.textbox{
+    width:100%;
+}
+
+.selectable{
+    margin-left:2%;
+    cursor: pointer
+}
+
+.titlecontainer{
+    width:100%;
+}

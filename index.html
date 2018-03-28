@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Selector contains the gui element -->
+        <div class="selector">
+            <!-- Textbox is the input box at the top of the page. will contain the site. -->
+            <input class="textbox">
+            <!-- the accordian box, contains the list system-->
+            <div class="accordianContainer">
+                <!-- Sub category, can contain another list of sub cats for more categories -->
+                <div class="subcat">
+                    <div class="titlecontainer selectable">
+                        <p class="sideBySide button">▶</p> 
+                        <p class="sideBySide titleT selectable">Company 1 </p> 
+                    </div>
+                    <!-- subcats are repeatable, the js will use the dom tree to determine functionality-->
+                    <div class="subcat">
+                        <!-- the title of the category -->
+                        <div class="titlecontainer selectable">
+                            <p class="sideBySide button">▶</p> 
+                            <p class="sideBySide titleT selectable">Area 1 </p> 
+                        </div>
+
+                        <div class="subcat"> 
+                            <div class="titlecontainer selectable">
+                                <p class="sideBySide button">▶</p> 
+                                <p class="sideBySide titleT selectable">Region 1 </p> 
+                            </div>
+                            
+                            <div class="subcat">
+                                <!-- Finally a siteT ends the list. selecting this object adds it to the text box and closes all items -->
+                                <p class="siteT selectable">Site 1</p>
+                            </div>
+                        </div> 
+                    </div> 
+
+                    <div class="subcat">
+                        <div class="titlecontainer selectable">
+                            <p class="sideBySide button">▶</p> 
+                            <p class="sideBySide titleT selectable">Area 2 </p> 
+                        </div>
+                        <div class="subcat"> 
+                            <div class="titlecontainer selectable">
+                                <p class="sideBySide button">▶</p> 
+                                <p class="sideBySide titleT selectable">Region 2 </p> 
+                            </div>
+                            <div class="subcat">
+                                <p class="siteT selectable">Site 2</p>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+
+                <div class="subcat">
+                    <div class="titlecontainer selectable">
+                        <p class="sideBySide button">▶</p> 
+                        <p class="sideBySide titleT selectable">Company 2 </p> 
+                    </div>
+                    <div class="subcat">
+                        <div class="titlecontainer selectable">
+                            <p class="sideBySide button">▶</p> 
+                            <p class="sideBySide titleT selectable">Area 2 </p> 
+                        </div>
+                        <div class="subcat"> 
+                            <div class="titlecontainer selectable">
+                                <p class="sideBySide button">▶</p> 
+                                <p class="sideBySide titleT selectable">Region 1 </p> 
+                            </div>
+                            <div class="subcat">
+                                <p class="siteT selectable">Site 3</p>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+
+                <div class="subcat">
+                    <div class="titlecontainer selectable">
+                        <p class="sideBySide button">▶</p> 
+                        <p class="sideBySide titleT selectable">Company 3 </p> 
+                    </div>
+    
+                    <div class="subcat">
+                        <div class="titlecontainer selectable">
+                            <p class="sideBySide button">▶</p> 
+                            <p class="sideBySide titleT selectable">Area 1 </p> 
+                        </div>
+
+                        <div class="subcat"> 
+                            <div class="titlecontainer selectable">
+                                <p class="sideBySide button">▶</p> 
+                                <p class="sideBySide titleT selectable">Region 1 </p> 
+                            </div>
+                            
+                            <div class="subcat">
+                                <p class="siteT selectable">Site 4</p>
+                            </div>
+                        </div> 
+
+                        <div class="subcat"> 
+                            <div class="titlecontainer selectable">
+                                <p class="sideBySide button">▶</p> 
+                                <p class="sideBySide titleT selectable">Region 2 </p> 
+                            </div>
+                            
+                            <div class="subcat">
+                                <p class="siteT selectable">Site 5</p>
+                            </div>
+                        </div> 
+
+                        <div class="subcat"> 
+                            <div class="titlecontainer selectable">
+                                <p class="sideBySide button">▶</p> 
+                                <p class="sideBySide titleT selectable">Region 3 </p> 
+                            </div>
+                            
+                            <div class="subcat">
+                                <p class="siteT selectable">Site 6</p>
+                            </div>
+                        </div> 
+
+                        <div class="subcat"> 
+                            <div class="titlecontainer selectable">
+                                <p class="sideBySide button">▶</p> 
+                                <p class="sideBySide titleT selectable">Region 4 </p> 
+                            </div>
+                            
+                            <div class="subcat">
+                                <p class="siteT selectable">Site 7</p>
+                            </div>
+                        </div> 
+
+
+
+                    </div> 
+
+                    <div class="subcat">
+                        <div class="titlecontainer selectable">
+                            <p class="sideBySide button">▶</p> 
+                            <p class="sideBySide titleT selectable">Area 2 </p> 
+                        </div>
+                        <div class="subcat"> 
+                            <div class="titlecontainer selectable">
+                                <p class="sideBySide button">▶</p> 
+                                <p class="sideBySide titleT selectable">Region 2 </p> 
+                            </div>
+                            <div class="subcat">
+                                <p class="siteT selectable">Site 8</p>
+                            </div>
+                        </div> 
+                    </div> 
+                
+                
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
